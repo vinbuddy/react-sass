@@ -1,0 +1,19 @@
+@import "../../sass/variables";
+@import "../../sass/mixin";
+
+.button {
+    @include buttonStyle();
+
+    &.primary {
+        color: #fff;
+        background-color: $primary;
+    }
+
+    &.secondary {
+        background-color: #ccc;
+    }
+
+    &.small {
+        padding: 7px;
+    }
+}

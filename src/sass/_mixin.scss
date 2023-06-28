@@ -1,0 +1,16 @@
+// base Button
+@mixin buttonStyle {
+    color: #000;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+// Flexbox
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,21 @@
+@use "../../sass/mixin" as mix;
+@use "../../sass/variables" as var;
+// @use -> mixin, variable
+
+@import "../../sass/extend";
+
+form {
+    margin-top: 30px;
+}
+
+.form-group {
+    @include mix.flex-center;
+}
+
+.form-input {
+    @extend %inputStyle;
+
+    &.custom {
+        border: 1px solid var.$primary;
+    }
+}
